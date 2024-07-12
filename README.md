@@ -19,7 +19,7 @@ For establishing communication and proper coordination: group chats, google meet
 
 # Code execution guide
 - clone the repo on local computer
-- navigate to w24-mp1-ceo-s\bookManagement Folder and set current path to that folder.
+- navigate to bookManagement Folder and set current path to that folder.
 - add Database file in that folder
 - run command: python cLIinterface.py
 - The program is now running 
