@@ -1,0 +1,49 @@
+-- Members
+INSERT INTO members (email, passwd, name, byear, faculty) VALUES 
+('bakhshis@ualberta.ca', 'bakhshis', 'Bakhshish', 2003, 'Science');
+INSERT INTO members (email, passwd, name, byear, faculty) VALUES 
+('sapan@ualberta.ca', 'sapan', 'Sapandeep', 2003, 'Science');
+
+-- Books
+INSERT INTO books (book_id, title, author, pyear) VALUES (1,'Red riding', 'Hero', 1997);
+INSERT INTO books (book_id, title, author, pyear) VALUES (2,'Blue riding', 'Zipep', 2003);
+INSERT INTO books (book_id, title, author, pyear) VALUES (3,'Great god', 'keeper', 1994);
+INSERT INTO books (book_id, title, author, pyear) VALUES (4,'Brothers', 'HSamarth', 1991);
+INSERT INTO books (book_id, title, author, pyear) VALUES (5,'Heroes Rising', 'Fulkon', 2004);
+INSERT INTO books (book_id, title, author, pyear) VALUES (6,'Game On', 'Timothy', 2012);
+INSERT INTO books (book_id, title, author, pyear) VALUES (7,'Sample Data', 'Viceroy', 2016);
+INSERT INTO books (book_id, title, author, pyear) VALUES (8,'Apple Day', 'Tim', 2020);
+INSERT INTO books (book_id, title, author, pyear) VALUES (9,'Tori Rising', 'Givon', 1997);
+INSERT INTO books (book_id, title, author, pyear) VALUES (10,'My dude here', 'Thongy', 2004);
+
+-- Borrowings
+INSERT INTO borrowings (bid, member, book_id, start_date, end_date) VALUES 
+(1, 'bakhshis@ualberta.ca', 1, '2024-03-15', NULL);
+INSERT INTO borrowings (bid, member, book_id, start_date, end_date) VALUES 
+(2, 'bakhshis@ualberta.ca', 10, '2024-03-10', NULL);
+INSERT INTO borrowings (bid, member, book_id, start_date, end_date) VALUES 
+(3, 'bakhshis@ualberta.ca', 9, '2024-02-05', '2024-02-14');
+INSERT INTO borrowings (bid, member, book_id, start_date, end_date) VALUES 
+(4, 'bakhshis@ualberta.ca', 8, '2024-03-01', NULL);
+INSERT INTO borrowings (bid, member, book_id, start_date, end_date) VALUES 
+(6, 'bakhshis@ualberta.ca', 6, '2024-02-22', NULL);
+INSERT INTO borrowings (bid, member, book_id, start_date, end_date) VALUES 
+(7, 'bakhshis@ualberta.ca', 5, '2024-02-12', '2024-11-17');
+INSERT INTO borrowings (bid, member, book_id, start_date, end_date) VALUES 
+(8, 'bakhshis@ualberta.ca', 4, '2023-12-30', NULL);
+INSERT INTO borrowings (bid, member, book_id, start_date, end_date) VALUES 
+(9, 'bakhshis@ualberta.ca', 3, '2024-02-04', NULL);
+INSERT INTO borrowings (bid, member, book_id, start_date, end_date) VALUES 
+(10, 'sapan@ualberta.ca', 2, '2024-02-14', NULL);
+INSERT INTO borrowings (bid, member, book_id, start_date, end_date) VALUES 
+(11, 'sapan@ualberta.ca', 9, '2024-02-15', NULL);
+
+
+INSERT INTO penalties (pid,bid,amount,paid_amount) VALUES (1,9,20,0);
+INSERT INTO penalties (pid,bid,amount,paid_amount) VALUES (2,8,60,0);
+INSERT INTO penalties (pid,bid,amount,paid_amount) VALUES (3,7,40,0);
+
+INSERT INTO reviews (rid, book_id, member, rating, rtext, rdate) VALUES (1,1,'bakhshis@ualberta.ca',
+5, 'The book red riding was very well written. Great work by the author.','2024-10-10');
+INSERT INTO reviews (rid, book_id, member, rating, rtext, rdate) VALUES (2,1,'sapan@ualberta.ca',
+4, 'The book is okayish but is not up to the mark. Needs improvement.','2024-10-30');
